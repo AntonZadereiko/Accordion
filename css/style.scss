@@ -502,3 +502,247 @@ header{
     }
 }
 }
+.point{
+    background-color: #194677;
+    padding: 96px 0;
+    @include max-screen(800px){      
+        padding: 50px 15px;
+}
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .point_image{
+            margin-bottom: 25px;
+        }
+        p{
+            max-width: 646px;
+            font-family: $font;
+            font-style: italic;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 32.5px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 25px;
+            @include max-screen(800px){      
+                font-size: 21px;
+        }
+            span{
+                color: #E48D8B;
+            }
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                color: rgb(255, 255, 255);
+                font-family: $font;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0%;
+                text-align: center;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+.question{
+    padding: 100px 0;
+    @include max-screen(1000px){      
+        padding: 50px 15px;
+}
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    h3{
+        color: rgb(15, 15, 15);
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 45.6px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 40px;
+        @include max-screen(650px){      
+            margin-bottom: 20px;
+            font-size: 30px;
+    }
+    }
+    .accordion-item{
+        width: 800px;
+        border-bottom: 1px solid #DBDBDB;
+        padding: 20px 0;
+        @include max-screen(900px){      
+            width: 600px;
+    }
+    @include max-screen(650px){      
+        width: 400px;
+}
+@include max-screen(450px){      
+    width: 300px;
+}
+        h4{
+            color: rgb(15, 15, 15);
+            font-family: $font;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 30.8px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        h5{
+            color: rgb(15, 15, 15);
+            font-family: $font;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30.8px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        .accordion-content {
+            display: none; /* Спочатку приховано */
+            padding: 10px 0 10px 2px;
+            background-color: #E48D8B;
+          }
+    }
+    
+      
+      .accordion-item.open .accordion-content {
+        display: block; /* Показати вміст при додаванні класу "open" */
+      }
+}
+}
+.podcast{
+    padding: 120px 0;
+    background: rgb(228, 141, 139);
+    @include max-screen(1200px){      
+        padding: 60px 15px;
+    }
+    .container{
+        h3{
+            color: rgb(255, 255, 255);
+            font-family: $font;
+            font-size: 38px;
+            font-weight: 400;
+            line-height: 45.6px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 64px;
+        }
+        .podcast_box{
+            display: flex;
+            justify-content: space-between;
+            @include max-screen(740px){      
+                flex-direction: column;
+                align-items: center;
+            }
+            article{
+                box-shadow: 0px 0px 0px 0px rgba(234, 239, 240, 0.93);
+                background: rgb(255, 255, 255);
+                padding: 48px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 430px;
+                @include max-screen(1100px){      
+                    width: 350px;
+                    padding: 30px;
+                }
+                @include max-screen(870px){      
+                    width: 300px;
+                    padding: 25px;
+                }
+                @include max-screen(740px){      
+                    margin-bottom: 20px;
+                }
+                @include max-screen(400px){      
+                    width: 280px;
+                    padding: 18px;
+                }
+                .podcast_image{
+                    margin-bottom: 11px;
+                }
+                h4{
+                    margin-bottom: 15px;
+                    color: rgb(70, 70, 70);
+                    font-family: $font;
+                    font-size: 38px;
+                    font-weight: 400;
+                    line-height: 45.6px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                }
+                p{
+                    color: rgb(1, 124, 255);
+                    font-family: $font;
+                    font-size: 31px;
+                    font-weight: 400;
+                    line-height: 38.4px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    margin-bottom: 35px;
+                    span{
+                        color: rgb(117, 117, 117);
+                        font-family: $font;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 22.4px;
+                        letter-spacing: 0.5px;
+                        text-align: center;
+                    }
+                }
+                h5{
+                    margin-bottom: 13px;
+                    color: rgb(70, 70, 70);
+                    font-family: $font;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    max-width: 230px;
+                }
+                .podcast_link{
+                    padding: 8px 32px;
+                    background: rgb(1, 124, 255);
+                    margin-bottom: 56px;
+                    &:hover{
+                        transition-duration: 0.5s;
+                        background-color: rgb(228, 141, 139) ;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        font-family: $font;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 27px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                    }
+                }
+                .podcast_title{
+                    align-self: flex-start;
+                    h6{
+                        img{
+                            position: relative;
+                            top: 4px;
+                            margin-right: 5px;
+                        }
+                        color: rgb(70, 70, 70);
+                        font-family: $font;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 25.2px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
